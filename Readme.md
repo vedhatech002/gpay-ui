@@ -44,14 +44,15 @@ This internship is provided by [CyberDude Networks Pvt. Ltd.](https://youtube.co
 
 ## Installation
 
-- To install and set up your project locally.
-      1. Download or Clone this repo
-      2. Open this cloned folder in your text editors
-      3. Comment the minified css in index file 
-      4. Uncomment the main.css file
-      5. In your terminal run **npm run dev** this command.
-      6. Now You can found the localhost link address in terminal open that link with browser. 
-      7.And you will see the result.
+To install and set up your project locally.
+
+1. Download or Clone this repo
+2. Open this cloned folder in your text editors
+3. Comment the minified css in index file 
+4. Uncomment the main.css file
+5. In your terminal run **npm run dev** this command.
+6. Now You can found the localhost link address in terminal open that link with browser. 
+7. And you will see the result.
 
 
 ## Usage
