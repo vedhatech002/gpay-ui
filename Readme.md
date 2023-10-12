@@ -34,7 +34,6 @@ This internship is provided by [CyberDude Networks Pvt. Ltd.](https://youtube.co
 
 ## Technologies Used
 
-[List the technologies, programming languages, and libraries/frameworks used in your project.]
 - HTML 5
 - Tailwind CSS
 - Vite vannila js  
