@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "home": "https://github.com/vedhatech002/Google-Pay-Ui-using-tailwindcss",
+  "home": "https://github.com/vedhatech002/gpay-ui",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
