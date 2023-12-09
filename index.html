@@ -1,487 +1,812 @@
-<!doctype html>
-<!doctype html>
+<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="./public/img/favicon.png"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gpay-Ui-Tailwind</title>
+    <!-- <link rel="stylesheet" href="./public/css/main.css"> -->
+    <link rel="stylesheet" href="/public/css/main.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="shortcut icon" href="./public/img/favicon.png" type="image/x-icon">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gpay-Ui-Tailwind</title>
-  <!-- <link rel="stylesheet" href="./public/css/main.css"> -->
-  <link rel="stylesheet" href="./dist/assets/index-451c2b6c.css">
-
-</head>
-
-<body class="bg-dark-secondary">
-  <main class=" sm:w-[425px] mx-auto">
-    <!-- top section with input and banner -->
-    <section>
-      <div class="py-3 px-5 bg-dark-primary-alt flex items-center justify-between space-x-3">
-        <!-- input box -->
-        <input
-          class="bg-dark-secondary py-2 px-5 pl-12 w-full border-none outline-none shadow rounded-full text-white relative placeholder:text-sm sm:placeholder:text-[16px]"
-          type="text" name="" id="" placeholder="pay by name or phone number">
-        <!-- search icon -->
-        <svg class="absolute top-5.5 " xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
-          <path fill="#e3e3e3"
-            d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0c.41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z" />
-        </svg>
-        <!-- profile img -->
-        <img class=" w-8 h-8 rounded-full object-contain" src="./public/img/profile.jpg" alt="vijay">
-      </div>
-      <!-- hero banner -->
-      <div>
-        <img src="./public/img/gpaydarkherobanner.jpg" alt="">
-      </div>
-    </section>
-
-
-    <!-- icons menu section -->
-    <section class="bg-dark-primary py-8">
-      <!-- icons grids -->
-      <div class="grid grid-cols-4 gap-y-7 px-5 gap-x-5">
-        <!-- scan icon div -->
+  <body class="bg-dark-secondary">
+    <main class="sm:w-[425px] mx-auto">
+      <!-- top section with input and banner -->
+      <section>
         <div
-          class="flex flex-col items-center text-dark-text-color py-4 hover:bg-dark-secondary rounded cursor-pointer">
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-              <path fill="currentcolor"
-                d="M9.5 6.5v3h-3v-3h3M11 5H5v6h6V5zm-1.5 9.5v3h-3v-3h3M11 13H5v6h6v-6zm6.5-6.5v3h-3v-3h3M19 5h-6v6h6V5zm-6 8h1.5v1.5H13V13zm1.5 1.5H16V16h-1.5v-1.5zM16 13h1.5v1.5H16V13zm-3 3h1.5v1.5H13V16zm1.5 1.5H16V19h-1.5v-1.5zM16 16h1.5v1.5H16V16zm1.5-1.5H19V16h-1.5v-1.5zm0 3H19V19h-1.5v-1.5zM21 7c-.55 0-1-.45-1-1V4h-2c-.55 0-1-.45-1-1s.45-1 1-1h3c.55 0 1 .45 1 1v3c0 .55-.45 1-1 1zm1 14v-3c0-.55-.45-1-1-1s-1 .45-1 1v2h-2c-.55 0-1 .45-1 1s.45 1 1 1h3c.55 0 1-.45 1-1zM3 22h3c.55 0 1-.45 1-1s-.45-1-1-1H4v-2c0-.55-.45-1-1-1s-1 .45-1 1v3c0 .55.45 1 1 1zM2 3v3c0 .55.45 1 1 1s1-.45 1-1V4h2c.55 0 1-.45 1-1s-.45-1-1-1H3c-.55 0-1 .45-1 1z" />
-            </svg>
-          </span>
-          <p class="text-sm font-normal">Scan any<br> Qr code</p>
-        </div>
-
-        <!-- pay contacts div -->
-        <div
-          class="flex flex-col items-center text-dark-text-color  py-4 hover:bg-dark-secondary rounded cursor-pointer ">
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" x="0px" y="0px">
-              <path fill="currentcolor" fill-rule="evenodd" clip-rule="evenodd"
-                d="M4 4C4 2.34315 5.34315 1 7 1H19C20.6569 1 22 2.34315 22 4V20C22 21.6569 20.6569 23 19 23H7C5.34315 23 4 21.6569 4 20V18H3C2.44772 18 2 17.5523 2 17C2 16.4477 2.44772 16 3 16H4V13H3C2.44772 13 2 12.5523 2 12C2 11.4477 2.44772 11 3 11H4V8H3C2.44772 8 2 7.55228 2 7C2 6.44772 2.44772 6 3 6H4V4ZM7 3C6.44772 3 6 3.44772 6 4V20C6 20.5523 6.44772 21 7 21H19C19.5523 21 20 20.5523 20 20V4C20 3.44772 19.5523 3 19 3H7ZM10 7C8.89543 7 8 7.89543 8 9C8 13.4183 11.5817 17 16 17C17.1046 17 18 16.1046 18 15C18 13.8954 17.1046 13 16 13H15.4142C14.8838 13 14.3751 13.2107 14 13.5858L13.2929 14.2929C13.279 14.3068 13.2656 14.321 13.2527 14.3355C12.144 13.7635 11.2365 12.856 10.6645 11.7473C10.679 11.7344 10.6932 11.721 10.7071 11.7071L11.4142 11C11.7893 10.6249 12 10.1162 12 9.58579V9C12 7.89543 11.1046 7 10 7Z">
-              </path>
-            </svg>
-          </span>
-          <p class="text-sm font-normal text-center">pay<br> contacts </p>
-        </div>
-        <!-- pay phone number -->
-        <div
-          class="flex flex-col items-center text-dark-text-color  py-4 hover:bg-dark-secondary rounded cursor-pointer ">
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-              <path fill="currentcolor"
-                d="M7 23q-.825 0-1.413-.588T5 21v-6h2v3h10V6H7v3H5V3q0-.825.588-1.413T7 1h10q.825 0 1.413.588T19 3v18q0 .825-.588 1.413T17 23H7Zm0-3v1h10v-1H7Zm3.15-7H3q-.425 0-.713-.288T2 12q0-.425.288-.713T3 11h7.15l-.875-.9Q9 9.825 9 9.412t.3-.712q.275-.275.7-.275t.7.275l2.6 2.6q.3.3.3.7t-.3.7l-2.6 2.6q-.275.275-.687.288T9.3 15.3q-.275-.275-.288-.688t.263-.712l.875-.9ZM7 4h10V3H7v1Zm0 0V3v1Zm0 16v1v-1Z">
-              </path>
-            </svg>
-          </span>
-          <p class="text-sm  font-normal text-center">pay phone<br> number</p>
-        </div>
-        <!-- bank trajnsfer-->
-        <div
-          class="flex flex-col items-center text-dark-text-color   py-4 hover:bg-dark-secondary rounded cursor-pointer">
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-              <path fill="currentcolor"
-                d="M6.5 10h-2v7h2v-7m6 0h-2v7h2v-7m8.5 9H2v2h19v-2m-2.5-9h-2v7h2v-7m-7-6.74L16.71 6H6.29l5.21-2.74m0-2.26L2 6v2h19V6l-9.5-5Z">
-              </path>
-            </svg>
-          </span>
-          <p class="text-sm font-normal text-center">Bank<br> transfer</p>
-        </div>
-
-        <!-- pay upi id -->
-        <div
-          class="flex flex-col items-center text-dark-text-color  py-4 hover:bg-dark-secondary rounded cursor-pointer ">
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 20 20">
-              <path fill="currentcolor" fill-rule="evenodd"
-                d="M5.404 14.596A6.5 6.5 0 1 1 16.5 10a1.25 1.25 0 0 1-2.5 0a4 4 0 1 0-.571 2.06A2.75 2.75 0 0 0 18 10a8 8 0 1 0-2.343 5.657a.75.75 0 0 0-1.06-1.06a6.5 6.5 0 0 1-9.193 0ZM10 7.5a2.5 2.5 0 1 0 0 5a2.5 2.5 0 0 0 0-5Z"
-                clip-rule="evenodd" />
-            </svg>
-          </span>
-          <p class="text-sm font-normal">pay UPI ID <br> or number</p>
-        </div>
-        <!-- pay self -->
-        <div
-          class="flex flex-col items-center text-dark-text-color  py-4 hover:bg-dark-secondary rounded cursor-pointer">
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-              <path fill="currentcolor"
-                d="M15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4s-4 1.79-4 4s1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2s-2-.9-2-2s.9-2 2-2zm0 8c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4zm-6 4c.22-.72 3.31-2 6-2c2.7 0 5.8 1.29 6 2H9zm-3-3v-3h3v-2H6V7H4v3H1v2h3v3z" />
-            </svg>
-          </span>
-          <p class="text-sm  font-normal text-center">Self-<br>transfer</p>
-        </div>
-        <!-- pay bills -->
-        <div
-          class="flex flex-col items-center text-dark-text-color   py-4 hover:bg-dark-secondary rounded cursor-pointer">
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-              <path fill="#4169e1"
-                d="M14 9h-4c-.55 0-1-.45-1-1s.45-1 1-1h4c.55 0 1 .45 1 1s-.45 1-1 1zm0 3h-4c-.55 0-1-.45-1-1s.45-1 1-1h4c.55 0 1 .45 1 1s-.45 1-1 1z" />
-              <path fill="currentcolor"
-                d="M19.5 3.5L18 2l-1.5 1.5L15 2l-1.5 1.5L12 2l-1.5 1.5L9 2L7.5 3.5L6 2v14H4c-.55 0-1 .45-1 1v2c0 1.66 1.34 3 3 3h12c1.66 0 3-1.34 3-3V2l-1.5 1.5zM15 20H6c-.55 0-1-.45-1-1v-1h10v2zm4-1c0 .55-.45 1-1 1s-1-.45-1-1v-2c0-.55-.45-1-1-1H8V5h11v14z" />
-              <circle cx="17" cy="8" r="1" fill="#4169e1" />
-              <circle cx="17" cy="11" r="1" fill="#4169e1" />
-            </svg>
-          </span>
-          <p class="text-sm text-white font-normal text-center">Pay <br> bills</p>
-        </div>
-        <!-- rechargee -->
-        <div
-          class="flex flex-col items-center text-dark-text-color  py-4 hover:bg-dark-secondary rounded cursor-pointer ">
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-              <path fill="currentcolor"
-                d="m14.5 11l-3 6v-4h-2l3-6v4h2zM17 3H7v1h10V3m0 17H7v1h10v-1m0-19c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H7c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h10zM7 18h10V6H7v12z" />
-            </svg>
-          </span>
-          <p class="text-sm font-normal text-center">Mobile <br> recharge</p>
-        </div>
-
-      </div>
-      <!--my  upi id -->
-      <div
-        class="text-xs text-dark-text-color bg-dark-secondary flex items-center gap-x-3 mx-auto w-60 py-1 px-2 rounded-full mt-8 cursor-pointer">
-        <span class="">UPI ID: vijayavedhasekaran@okokic</span>
-        <span class="">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-            <path fill="currentcolor"
-              d="M15 20H5V7c0-.55-.45-1-1-1s-1 .45-1 1v13c0 1.1.9 2 2 2h10c.55 0 1-.45 1-1s-.45-1-1-1zm5-4V4c0-1.1-.9-2-2-2H9c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h9c1.1 0 2-.9 2-2zm-2 0H9V4h9v12z" />
+          class="py-3 px-5 bg-dark-primary-alt flex items-center justify-between space-x-3"
+        >
+          <!-- input box -->
+          <input
+            class="bg-dark-secondary py-2 px-5 pl-12 w-full border-none outline-none shadow rounded-full text-white relative placeholder:text-sm sm:placeholder:text-[16px]"
+            type="text"
+            name=""
+            id=""
+            placeholder="pay by name or phone number"
+          />
+          <!-- search icon -->
+          <svg
+            class="absolute top-5.5"
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="#e3e3e3"
+              d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0c.41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z"
+            />
           </svg>
-        </span>
-      </div>
-    </section>
+          <!-- profile img -->
+          <img
+            class="w-8 h-8 rounded-full object-contain"
+            src="./public/img/profile.jpg"
+            alt="vijay"
+          />
+        </div>
+        <!-- hero banner -->
+        <div>
+          <img src="./public/img/gpaydarkherobanner.jpg" alt="" />
+        </div>
+      </section>
 
-    <!--payment people section -->
-    <section class="bg-dark-primary text-dark-text-color">
-      <h3 class="px-5 text-lg">People</h3>
-      <!-- people list -->
-      <div class="grid grid-cols-4 gap-y-8 py-4">
-        <!-- people  -->
-        <div class="flex flex-col items-center cursor-wait ">
-          <img class="w-14 h-14 rounded-full object-cover" src="./public/img/ramesh.jpg" alt="ramesh">
-          <p>ramesh</p>
+      <!-- icons menu section -->
+      <section class="bg-dark-primary py-8">
+        <!-- icons grids -->
+        <div class="grid grid-cols-4 gap-y-7 px-5 gap-x-5">
+          <!-- scan icon div -->
+          <div
+            class="flex flex-col items-center text-dark-text-color py-4 hover:bg-dark-secondary rounded cursor-pointer"
+          >
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentcolor"
+                  d="M9.5 6.5v3h-3v-3h3M11 5H5v6h6V5zm-1.5 9.5v3h-3v-3h3M11 13H5v6h6v-6zm6.5-6.5v3h-3v-3h3M19 5h-6v6h6V5zm-6 8h1.5v1.5H13V13zm1.5 1.5H16V16h-1.5v-1.5zM16 13h1.5v1.5H16V13zm-3 3h1.5v1.5H13V16zm1.5 1.5H16V19h-1.5v-1.5zM16 16h1.5v1.5H16V16zm1.5-1.5H19V16h-1.5v-1.5zm0 3H19V19h-1.5v-1.5zM21 7c-.55 0-1-.45-1-1V4h-2c-.55 0-1-.45-1-1s.45-1 1-1h3c.55 0 1 .45 1 1v3c0 .55-.45 1-1 1zm1 14v-3c0-.55-.45-1-1-1s-1 .45-1 1v2h-2c-.55 0-1 .45-1 1s.45 1 1 1h3c.55 0 1-.45 1-1zM3 22h3c.55 0 1-.45 1-1s-.45-1-1-1H4v-2c0-.55-.45-1-1-1s-1 .45-1 1v3c0 .55.45 1 1 1zM2 3v3c0 .55.45 1 1 1s1-.45 1-1V4h2c.55 0 1-.45 1-1s-.45-1-1-1H3c-.55 0-1 .45-1 1z"
+                />
+              </svg>
+            </span>
+            <p class="text-sm font-normal">
+              Scan any<br />
+              Qr code
+            </p>
+          </div>
+
+          <!-- pay contacts div -->
+          <div
+            class="flex flex-col items-center text-dark-text-color py-4 hover:bg-dark-secondary rounded cursor-pointer"
+          >
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="32"
+                height="32"
+                x="0px"
+                y="0px"
+              >
+                <path
+                  fill="currentcolor"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M4 4C4 2.34315 5.34315 1 7 1H19C20.6569 1 22 2.34315 22 4V20C22 21.6569 20.6569 23 19 23H7C5.34315 23 4 21.6569 4 20V18H3C2.44772 18 2 17.5523 2 17C2 16.4477 2.44772 16 3 16H4V13H3C2.44772 13 2 12.5523 2 12C2 11.4477 2.44772 11 3 11H4V8H3C2.44772 8 2 7.55228 2 7C2 6.44772 2.44772 6 3 6H4V4ZM7 3C6.44772 3 6 3.44772 6 4V20C6 20.5523 6.44772 21 7 21H19C19.5523 21 20 20.5523 20 20V4C20 3.44772 19.5523 3 19 3H7ZM10 7C8.89543 7 8 7.89543 8 9C8 13.4183 11.5817 17 16 17C17.1046 17 18 16.1046 18 15C18 13.8954 17.1046 13 16 13H15.4142C14.8838 13 14.3751 13.2107 14 13.5858L13.2929 14.2929C13.279 14.3068 13.2656 14.321 13.2527 14.3355C12.144 13.7635 11.2365 12.856 10.6645 11.7473C10.679 11.7344 10.6932 11.721 10.7071 11.7071L11.4142 11C11.7893 10.6249 12 10.1162 12 9.58579V9C12 7.89543 11.1046 7 10 7Z"
+                ></path>
+              </svg>
+            </span>
+            <p class="text-sm font-normal text-center">
+              pay<br />
+              contacts
+            </p>
+          </div>
+          <!-- pay phone number -->
+          <div
+            class="flex flex-col items-center text-dark-text-color py-4 hover:bg-dark-secondary rounded cursor-pointer"
+          >
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentcolor"
+                  d="M7 23q-.825 0-1.413-.588T5 21v-6h2v3h10V6H7v3H5V3q0-.825.588-1.413T7 1h10q.825 0 1.413.588T19 3v18q0 .825-.588 1.413T17 23H7Zm0-3v1h10v-1H7Zm3.15-7H3q-.425 0-.713-.288T2 12q0-.425.288-.713T3 11h7.15l-.875-.9Q9 9.825 9 9.412t.3-.712q.275-.275.7-.275t.7.275l2.6 2.6q.3.3.3.7t-.3.7l-2.6 2.6q-.275.275-.687.288T9.3 15.3q-.275-.275-.288-.688t.263-.712l.875-.9ZM7 4h10V3H7v1Zm0 0V3v1Zm0 16v1v-1Z"
+                ></path>
+              </svg>
+            </span>
+            <p class="text-sm font-normal text-center">
+              pay phone<br />
+              number
+            </p>
+          </div>
+          <!-- bank trajnsfer-->
+          <div
+            class="flex flex-col items-center text-dark-text-color py-4 hover:bg-dark-secondary rounded cursor-pointer"
+          >
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentcolor"
+                  d="M6.5 10h-2v7h2v-7m6 0h-2v7h2v-7m8.5 9H2v2h19v-2m-2.5-9h-2v7h2v-7m-7-6.74L16.71 6H6.29l5.21-2.74m0-2.26L2 6v2h19V6l-9.5-5Z"
+                ></path>
+              </svg>
+            </span>
+            <p class="text-sm font-normal text-center">
+              Bank<br />
+              transfer
+            </p>
+          </div>
+
+          <!-- pay upi id -->
+          <div
+            class="flex flex-col items-center text-dark-text-color py-4 hover:bg-dark-secondary rounded cursor-pointer"
+          >
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill="currentcolor"
+                  fill-rule="evenodd"
+                  d="M5.404 14.596A6.5 6.5 0 1 1 16.5 10a1.25 1.25 0 0 1-2.5 0a4 4 0 1 0-.571 2.06A2.75 2.75 0 0 0 18 10a8 8 0 1 0-2.343 5.657a.75.75 0 0 0-1.06-1.06a6.5 6.5 0 0 1-9.193 0ZM10 7.5a2.5 2.5 0 1 0 0 5a2.5 2.5 0 0 0 0-5Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </span>
+            <p class="text-sm font-normal">
+              pay UPI ID <br />
+              or number
+            </p>
+          </div>
+          <!-- pay self -->
+          <div
+            class="flex flex-col items-center text-dark-text-color py-4 hover:bg-dark-secondary rounded cursor-pointer"
+          >
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentcolor"
+                  d="M15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4s-4 1.79-4 4s1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2s-2-.9-2-2s.9-2 2-2zm0 8c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4zm-6 4c.22-.72 3.31-2 6-2c2.7 0 5.8 1.29 6 2H9zm-3-3v-3h3v-2H6V7H4v3H1v2h3v3z"
+                />
+              </svg>
+            </span>
+            <p class="text-sm font-normal text-center">Self-<br />transfer</p>
+          </div>
+          <!-- pay bills -->
+          <div
+            class="flex flex-col items-center text-dark-text-color py-4 hover:bg-dark-secondary rounded cursor-pointer"
+          >
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#4169e1"
+                  d="M14 9h-4c-.55 0-1-.45-1-1s.45-1 1-1h4c.55 0 1 .45 1 1s-.45 1-1 1zm0 3h-4c-.55 0-1-.45-1-1s.45-1 1-1h4c.55 0 1 .45 1 1s-.45 1-1 1z"
+                />
+                <path
+                  fill="currentcolor"
+                  d="M19.5 3.5L18 2l-1.5 1.5L15 2l-1.5 1.5L12 2l-1.5 1.5L9 2L7.5 3.5L6 2v14H4c-.55 0-1 .45-1 1v2c0 1.66 1.34 3 3 3h12c1.66 0 3-1.34 3-3V2l-1.5 1.5zM15 20H6c-.55 0-1-.45-1-1v-1h10v2zm4-1c0 .55-.45 1-1 1s-1-.45-1-1v-2c0-.55-.45-1-1-1H8V5h11v14z"
+                />
+                <circle cx="17" cy="8" r="1" fill="#4169e1" />
+                <circle cx="17" cy="11" r="1" fill="#4169e1" />
+              </svg>
+            </span>
+            <p class="text-sm text-white font-normal text-center">
+              Pay <br />
+              bills
+            </p>
+          </div>
+          <!-- rechargee -->
+          <div
+            class="flex flex-col items-center text-dark-text-color py-4 hover:bg-dark-secondary rounded cursor-pointer"
+          >
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentcolor"
+                  d="m14.5 11l-3 6v-4h-2l3-6v4h2zM17 3H7v1h10V3m0 17H7v1h10v-1m0-19c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H7c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h10zM7 18h10V6H7v12z"
+                />
+              </svg>
+            </span>
+            <p class="text-sm font-normal text-center">
+              Mobile <br />
+              recharge
+            </p>
+          </div>
         </div>
-        <!-- people  -->
-        <div class="flex flex-col items-center cursor-pointer">
-          <img class="w-14 h-14 rounded-full object-cover"
-            src="https://ui-avatars.com/api/?name=Arjun+Sekar&background=random" alt="arjun">
-          <p>Arjun</p>
-        </div>
-        <!-- people  -->
-        <div class="flex flex-col items-center cursor-pointer">
-          <img class="w-14 h-14 rounded-full object-cover" src="./public/img/gobi.jpg" alt="Gobiharun">
-          <p>Gobi</p>
-        </div>
-        <!-- people  -->
-        <div class="flex flex-col items-center cursor-pointer">
-          <img class="w-14 h-14 rounded-full object-cover" src="./public/img/vijay.jpg" alt="vijay sekar">
-          <p>vijaysek..</p>
-        </div>
-        <!-- people  -->
-        <div class="flex flex-col items-center cursor-pointer">
-          <img class="w-14 h-14 rounded-full" src="https://ui-avatars.com/api/?name=Karan+C&background=random"
-            alt="karan">
-          <p>Karan</p>
-        </div>
-        <!-- people  -->
-        <div class="flex flex-col items-center  cursor-pointer">
-          <img class="w-14 h-14 rounded-full object-cover" src="./public/img/gaja.jpg" alt="Gaja">
-          <p>Gaja</p>
-        </div>
-        <!-- people  -->
-        <div class="flex flex-col items-center cursor-pointer">
-          <img class="w-14 h-14 rounded-full" src="https://ui-avatars.com/api/?name=Sathiya&background=random"
-            alt="sathiya">
-          <p>sakthiya</p>
-        </div>
-        <!-- view more  -->
-        <div class="flex flex-col items-center text-dark-text-color cursor-pointer  ">
-          <span class="border-[1.5px] border-dark-text-color rounded-full p-2.5 hover:bg-dark-secondary">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-              <path fill="#4169e1"
-                d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z" />
+        <!--my  upi id -->
+        <div
+          class="text-xs text-dark-text-color bg-dark-secondary flex items-center gap-x-3 mx-auto w-60 py-1 px-2 rounded-full mt-8 cursor-pointer"
+        >
+          <span class="">UPI ID: vijayavedhasekaran@okokic</span>
+          <span class="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentcolor"
+                d="M15 20H5V7c0-.55-.45-1-1-1s-1 .45-1 1v13c0 1.1.9 2 2 2h10c.55 0 1-.45 1-1s-.45-1-1-1zm5-4V4c0-1.1-.9-2-2-2H9c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h9c1.1 0 2-.9 2-2zm-2 0H9V4h9v12z"
+              />
             </svg>
           </span>
-          <p>More</p>
         </div>
+      </section>
 
-      </div>
-    </section>
-
-    <!--payment Buisness list -->
-    <section class="bg-dark-primary text-dark-text-color ">
-      <!-- title -->
-      <div class="px-5 flex items-center justify-between pt-2">
-        <h3 class=" text-lg">Businesses</h3>
-        <button class="text-sm bg-blue-900 flex items-center gap-x-1 px-4 py-2 rounded-full ">
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-              <path fill="currentcolor"
-                d="M18 6h-2c0-2.21-1.79-4-4-4S8 3.79 8 6H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6-2c1.1 0 2 .9 2 2h-4c0-1.1.9-2 2-2zm6 16H6V8h2v2c0 .55.45 1 1 1s1-.45 1-1V8h4v2c0 .55.45 1 1 1s1-.45 1-1V8h2v12z" />
-            </svg>
-          </span>
-          <span>
-            Explore
-          </span>
-
-        </button>
-      </div>
-
-      <!--buisness payment grid  container-->
-      <div class="grid grid-cols-4 py-6">
-        <!-- google play -->
-        <div class="flex flex-col items-center cursor-pointer">
-          <img class="w-14 h-14 rounded-full" src="./public/img/googleplay.png" alt="">
-          <p class="">G play</p>
-        </div>
-        <!-- vi -->
-        <div class="flex flex-col items-center cursor-pointer">
-          <img class="w-14 h-14 rounded-full" src="./public/img/Viprepaid.png" alt="">
-          <p class="">Vi pre..</p>
-        </div>
-        <!-- gtpl -->
-        <div class="flex flex-col items-center cursor-pointer">
-          <img class="w-14 h-14 rounded-full" src="./public/img/gtpl.png" alt="">
-          <p class="">My GTPL</p>
-        </div>
-        <!-- view more  -->
-        <div class="flex flex-col items-center text-blue-500 cursor-pointer ">
-          <span class="border-[1.5px] border-dark-text-color rounded-full p-2.5  hover:bg-dark-secondary">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-              <path fill="currentcolor"
-                d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z" />
-            </svg>
-          </span>
-        </div>
-
-
-      </div>
-
-    </section>
-
-    <!-- bills,recharge and more section -->
-    <section class="bg-dark-primary text-dark-text-color">
-      <h3 class="px-5 text-lg">Bills, recharges and more</h3>
-      <!-- bills done icons -->
-      <div class="flex items-center justify-between px-5 py-3 gap-x-3">
-        <img class="w-8 h-8 rounded-full" src="./public/img/Viprepaid.png" alt="vi">
-        <div class="flex-1 flex flex-col">
-          <span class="text-sm">Vi Prepaid6382</span>
-          <span class="text-[8px] text-red-400">Validity expiring today</span>
-        </div>
-        <button
-          class="text-blue-500 text-sm border-[1.5px] border-dark-text-color rounded-full py-1.5 px-5">Pay</button>
-
-      </div>
-      <!-- try to add these container -->
-      <div>
-        <h6 class="px-5 text-xs">Try adding these</h6>
-        <!-- grid container -->
-
-        <!--buisness payment grid  container-->
-        <div class="grid grid-cols-4 py-5">
-          <!-- google play -->
+      <!--payment people section -->
+      <section class="bg-dark-primary text-dark-text-color">
+        <h3 class="px-5 text-lg">People</h3>
+        <!-- people list -->
+        <div class="grid grid-cols-4 gap-y-8 py-4">
+          <!-- people  -->
+          <div class="flex flex-col items-center cursor-wait">
+            <img
+              class="w-14 h-14 rounded-full object-cover"
+              src="./public/img/ramesh.jpg"
+              alt="ramesh"
+            />
+            <p>ramesh</p>
+          </div>
+          <!-- people  -->
           <div class="flex flex-col items-center cursor-pointer">
-            <span class="bg-blue-900 rounded-full p-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path fill="currentcolor"
-                  d="m14.5 11l-3 6v-4h-2l3-6v4h2zM17 3H7v1h10V3m0 17H7v1h10v-1m0-19c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H7c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h10zM7 18h10V6H7v12z" />
-              </svg>
-            </span>
-            <p class="text-center text-sm">Mobile <br> recharge</p>
+            <img
+              class="w-14 h-14 rounded-full object-cover"
+              src="https://ui-avatars.com/api/?name=Arjun+Sekar&background=random"
+              alt="arjun"
+            />
+            <p>Arjun</p>
           </div>
-          <!-- vi -->
+          <!-- people  -->
           <div class="flex flex-col items-center cursor-pointer">
-            <span class="bg-blue-900 rounded-full p-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path fill="currentcolor"
-                  d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v1c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-1h5c1.1 0 1.99-.9 1.99-2L23 5c0-1.1-.9-2-2-2zm-1 14H4c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h16c.55 0 1 .45 1 1v10c0 .55-.45 1-1 1z" />
-              </svg>
-            </span>
-            <p class="text-center text-sm">Dth/cable<br>tv </p>
+            <img
+              class="w-14 h-14 rounded-full object-cover"
+              src="./public/img/gobi.jpg"
+              alt="Gobiharun"
+            />
+            <p>Gobi</p>
           </div>
-          <!-- gtpl -->
+          <!-- people  -->
           <div class="flex flex-col items-center cursor-pointer">
-            <span class="bg-blue-900 rounded-full p-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512"
-                class="hover:scale-110">
-                <path fill="none" stroke="#c3e7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
-                  d="M304 384v-24c0-29 31.54-56.43 52-76c28.84-27.57 44-64.61 44-108c0-80-63.73-144-144-144a143.6 143.6 0 0 0-144 144c0 41.84 15.81 81.39 44 108c20.35 19.21 52 46.7 52 76v24m16 96h64m-80-48h96m-48-48V256">
-                </path>
-                <path fill="none" stroke="#c3e7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
-                  d="M294 240s-21.51 16-38 16s-38-16-38-16"></path>
+            <img
+              class="w-14 h-14 rounded-full object-cover"
+              src="./public/img/vijay.jpg"
+              alt="vijay sekar"
+            />
+            <p>vijaysek..</p>
+          </div>
+          <!-- people  -->
+          <div class="flex flex-col items-center cursor-pointer">
+            <img
+              class="w-14 h-14 rounded-full"
+              src="https://ui-avatars.com/api/?name=Karan+C&background=random"
+              alt="karan"
+            />
+            <p>Karan</p>
+          </div>
+          <!-- people  -->
+          <div class="flex flex-col items-center cursor-pointer">
+            <img
+              class="w-14 h-14 rounded-full object-cover"
+              src="./public/img/gaja.jpg"
+              alt="Gaja"
+            />
+            <p>Gaja</p>
+          </div>
+          <!-- people  -->
+          <div class="flex flex-col items-center cursor-pointer">
+            <img
+              class="w-14 h-14 rounded-full"
+              src="https://ui-avatars.com/api/?name=Sathiya&background=random"
+              alt="sathiya"
+            />
+            <p>sakthiya</p>
+          </div>
+          <!-- view more  -->
+          <div
+            class="flex flex-col items-center text-dark-text-color cursor-pointer"
+          >
+            <span
+              class="border-[1.5px] border-dark-text-color rounded-full p-2.5 hover:bg-dark-secondary"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#4169e1"
+                  d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"
+                />
               </svg>
             </span>
-            <p class="text-center text-sm">Electricity</p>
+            <p>More</p>
           </div>
-
-          <div class="flex flex-col items-center cursor-pointer ">
-            <span class="bg-blue-900 rounded-full p-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path fill="currentcolor"
-                  d="M2.06 10.06c.51.51 1.32.56 1.87.1c4.67-3.84 11.45-3.84 16.13-.01c.56.46 1.38.42 1.89-.09c.59-.59.55-1.57-.1-2.1c-5.71-4.67-13.97-4.67-19.69 0c-.65.52-.7 1.5-.1 2.1zm7.76 7.76l1.47 1.47c.39.39 1.02.39 1.41 0l1.47-1.47c.47-.47.37-1.28-.23-1.59a4.28 4.28 0 0 0-3.91 0c-.57.31-.68 1.12-.21 1.59zm-3.73-3.73c.49.49 1.26.54 1.83.13a7.064 7.064 0 0 1 8.16 0c.57.4 1.34.36 1.83-.13l.01-.01c.6-.6.56-1.62-.13-2.11c-3.44-2.49-8.13-2.49-11.58 0c-.69.5-.73 1.51-.12 2.12z" />
-              </svg>
-            </span>
-            <p class="text-sm text-center">Broadband<br> Recharge</p>
-          </div>
-
-
         </div>
-        <div class="flex items-center justify-center">
-          <button class="text-blue-500 text-sm border-[1.5px] border-dark-text-color rounded-full py-1.5 px-5 ">
-            See All
+      </section>
+
+      <!--payment Buisness list -->
+      <section class="bg-dark-primary text-dark-text-color">
+        <!-- title -->
+        <div class="px-5 flex items-center justify-between pt-2">
+          <h3 class="text-lg">Businesses</h3>
+          <button
+            class="text-sm bg-blue-900 flex items-center gap-x-1 px-4 py-2 rounded-full"
+          >
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentcolor"
+                  d="M18 6h-2c0-2.21-1.79-4-4-4S8 3.79 8 6H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6-2c1.1 0 2 .9 2 2h-4c0-1.1.9-2 2-2zm6 16H6V8h2v2c0 .55.45 1 1 1s1-.45 1-1V8h4v2c0 .55.45 1 1 1s1-.45 1-1V8h2v12z"
+                />
+              </svg>
+            </span>
+            <span> Explore </span>
           </button>
         </div>
 
-      </div>
+        <!--buisness payment grid  container-->
+        <div class="grid grid-cols-4 py-6">
+          <!-- google play -->
+          <div class="flex flex-col items-center cursor-pointer">
+            <img
+              class="w-14 h-14 rounded-full"
+              src="./public/img/googleplay.png"
+              alt=""
+            />
+            <p class="">G play</p>
+          </div>
+          <!-- vi -->
+          <div class="flex flex-col items-center cursor-pointer">
+            <img
+              class="w-14 h-14 rounded-full"
+              src="./public/img/Viprepaid.png"
+              alt=""
+            />
+            <p class="">Vi pre..</p>
+          </div>
+          <!-- gtpl -->
+          <div class="flex flex-col items-center cursor-pointer">
+            <img
+              class="w-14 h-14 rounded-full"
+              src="./public/img/gtpl.png"
+              alt=""
+            />
+            <p class="">My GTPL</p>
+          </div>
+          <!-- view more  -->
+          <div class="flex flex-col items-center text-blue-500 cursor-pointer">
+            <span
+              class="border-[1.5px] border-dark-text-color rounded-full p-2.5 hover:bg-dark-secondary"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentcolor"
+                  d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </section>
 
-    </section>
-    <!-- promotion section -->
-    <section class="bg-dark-primary text-dark-text-color">
-      <h3 class=" text-lg px-5">Promotions</h3>
-      <!-- grid container -->
-      <div class="grid grid-cols-4 py-3">
-        <div class="flex flex-col items-center cursor-pointer">
-          <img class="w-12 h-12" src="./public/img/trophy.png" alt="rewards">
-          <p class="text-sm">Rewards</p>
-        </div>
-        <div class="flex flex-col items-center cursor-pointer">
-          <img class="w-12 h-12 rounded-full bg-red-300" src="./public/img/discount.png" alt="offers">
-          <p class="text-sm">Offers</p>
-        </div>
-        <div class="flex flex-col items-center cursor-pointer">
-          <img class="w-12 h-12 rounded-full bg-blue-400" src="./public/img/coupon.png" alt="coupons">
-          <p class="text-sm">Coupons</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- checking statements section -->
-    <section class="bg-dark-primary text-dark-text-color px-5  py-7 flex flex-col gap-y-4">
-      <!-- cibil -->
-      <div class="flex justify-between items-center cursor-pointer">
-        <div class="text-blue-400 ">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-            <path fill="currentcolor"
-              d="M19.46 10a1 1 0 0 0-.07 1a7.55 7.55 0 0 1 .52 1.81a8 8 0 0 1-.69 4.73a1 1 0 0 1-.89.53H5.68a1 1 0 0 1-.89-.54A8 8 0 0 1 13 6.06a7.69 7.69 0 0 1 2.11.56a1 1 0 0 0 1-.07a1 1 0 0 0-.17-1.76A10 10 0 0 0 3.35 19a2 2 0 0 0 1.72 1h13.85a2 2 0 0 0 1.74-1a10 10 0 0 0 .55-8.89a1 1 0 0 0-1.75-.11z" />
-            <path fill="currentcolor" d="M10.59 12.59a2 2 0 0 0 2.83 2.83l5.66-8.49z" />
-          </svg>
-        </div>
-        <div class="flex-1 ml-2">
-          <p class="text-sm">check Your Cibil Score at no cost</p>
-        </div>
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-            <path fill="#888888" d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z" />
-          </svg>
-        </div>
-      </div>
-      <!-- history of transaction -->
-      <div class="flex justify-between items-center cursor-pointer">
-        <div class="text-blue-400">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-            <path fill="currentcolor"
-              d="M13.26 3C8.17 2.86 4 6.95 4 12H2.21c-.45 0-.67.54-.35.85l2.79 2.8c.2.2.51.2.71 0l2.79-2.8a.5.5 0 0 0-.36-.85H6c0-3.9 3.18-7.05 7.1-7c3.72.05 6.85 3.18 6.9 6.9c.05 3.91-3.1 7.1-7 7.1c-1.61 0-3.1-.55-4.28-1.48a.994.994 0 0 0-1.32.08c-.42.42-.39 1.13.08 1.49A8.858 8.858 0 0 0 13 21c5.05 0 9.14-4.17 9-9.26c-.13-4.69-4.05-8.61-8.74-8.74zm-.51 5c-.41 0-.75.34-.75.75v3.68c0 .35.19.68.49.86l3.12 1.85c.36.21.82.09 1.03-.26c.21-.36.09-.82-.26-1.03l-2.88-1.71v-3.4c0-.4-.34-.74-.75-.74z" />
-          </svg>
-        </div>
-        <div class="flex-1 ml-2">
-          <p class="text-sm">Show transaction history</p>
-        </div>
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-            <path fill="#888888" d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z" />
-          </svg>
-        </div>
-      </div>
-      <!-- balance check -->
-      <div class="flex justify-between items-center cursor-pointer ">
-        <div class="text-blue-400">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-            <path fill="currentcolor"
-              d="M6.5 10h-2v7h2v-7m6 0h-2v7h2v-7m8.5 9H2v2h19v-2m-2.5-9h-2v7h2v-7m-7-6.74L16.71 6H6.29l5.21-2.74m0-2.26L2 6v2h19V6l-9.5-5Z">
-            </path>
-          </svg>
-        </div>
-        <div class="flex-1 ml-2">
-          <p class="text-sm">Check bank balance</p>
-        </div>
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-            <path fill="#888888" d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z" />
-          </svg>
-        </div>
-      </div>
-    </section>
-
-    <!-- footer section -->
-    <section class="bg-dark-primary text-dark-text-color relative">
-      <img class="h-[250px] w-full" src="./public/img/gpay-footer.jpg" alt="footerbanner">
-      <div class=" text-white  absolute top-0 left-2 px-5 py-6 ">
-
-        <div class="mt-3  top-0">
-          <h6>Invite friends to get ₹201</h6>
-          <p class="text-xs mt-2">invite friends to Google pay and get ₹201 when your freind sends their first
-            payment.They get
-            ₹21</p>
-
-          <p class="flex text-xs mt-6">Copy Your Code <span class="font-semibold">&nbsp;wc88y6g</span> <span><svg
-                xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                <path fill="currentcolor"
-                  d="M15 20H5V7c0-.55-.45-1-1-1s-1 .45-1 1v13c0 1.1.9 2 2 2h10c.55 0 1-.45 1-1s-.45-1-1-1zm5-4V4c0-1.1-.9-2-2-2H9c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h9c1.1 0 2-.9 2-2zm-2 0H9V4h9v12z">
-                </path>
-              </svg></span></p>
+      <!-- bills,recharge and more section -->
+      <section class="bg-dark-primary text-dark-text-color">
+        <h3 class="px-5 text-lg">Bills, recharges and more</h3>
+        <!-- bills done icons -->
+        <div class="flex items-center justify-between px-5 py-3 gap-x-3">
+          <img
+            class="w-8 h-8 rounded-full"
+            src="./public/img/Viprepaid.png"
+            alt="vi"
+          />
+          <div class="flex-1 flex flex-col">
+            <span class="text-sm">Vi Prepaid6382</span>
+            <span class="text-[8px] text-red-400">Validity expiring today</span>
+          </div>
           <button
-            class="text-blue-500 text-sm border-[1.5px] border-dark-text-color rounded-full py-1.5 px-5 mt-6">Invite</button>
+            class="text-blue-500 text-sm border-[1.5px] border-dark-text-color rounded-full py-1.5 px-5"
+          >
+            Pay
+          </button>
         </div>
+        <!-- try to add these container -->
+        <div>
+          <h6 class="px-5 text-xs">Try adding these</h6>
+          <!-- grid container -->
 
+          <!--buisness payment grid  container-->
+          <div class="grid grid-cols-4 py-5">
+            <!-- google play -->
+            <div class="flex flex-col items-center cursor-pointer">
+              <span class="bg-blue-900 rounded-full p-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentcolor"
+                    d="m14.5 11l-3 6v-4h-2l3-6v4h2zM17 3H7v1h10V3m0 17H7v1h10v-1m0-19c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H7c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h10zM7 18h10V6H7v12z"
+                  />
+                </svg>
+              </span>
+              <p class="text-center text-sm">
+                Mobile <br />
+                recharge
+              </p>
+            </div>
+            <!-- vi -->
+            <div class="flex flex-col items-center cursor-pointer">
+              <span class="bg-blue-900 rounded-full p-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentcolor"
+                    d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v1c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-1h5c1.1 0 1.99-.9 1.99-2L23 5c0-1.1-.9-2-2-2zm-1 14H4c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h16c.55 0 1 .45 1 1v10c0 .55-.45 1-1 1z"
+                  />
+                </svg>
+              </span>
+              <p class="text-center text-sm">Dth/cable<br />tv</p>
+            </div>
+            <!-- gtpl -->
+            <div class="flex flex-col items-center cursor-pointer">
+              <span class="bg-blue-900 rounded-full p-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 512 512"
+                  class="hover:scale-110"
+                >
+                  <path
+                    fill="none"
+                    stroke="#c3e7ff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                    d="M304 384v-24c0-29 31.54-56.43 52-76c28.84-27.57 44-64.61 44-108c0-80-63.73-144-144-144a143.6 143.6 0 0 0-144 144c0 41.84 15.81 81.39 44 108c20.35 19.21 52 46.7 52 76v24m16 96h64m-80-48h96m-48-48V256"
+                  ></path>
+                  <path
+                    fill="none"
+                    stroke="#c3e7ff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                    d="M294 240s-21.51 16-38 16s-38-16-38-16"
+                  ></path>
+                </svg>
+              </span>
+              <p class="text-center text-sm">Electricity</p>
+            </div>
 
-      </div>
-      <!-- copy rights section -->
-      <div class="py-4 px-5 flex items-center justify-center gap-1">
-        <p class="text-xs ">Developed by <a class="text-blue-400"
-            href="https://github.com/vedhatech002/gpay-ui">@vijayavedhasekaran</a>
-        </p>
-        <span>
-          <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
-            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
-            xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="16" height="16" viewBox="0 0 1024 1024"
-            fill="none" version="1.1" id="svg835" sodipodi:docname="Octicons-mark-github.svg"
-            inkscape:version="1.0.2 (e86c8708, 2021-01-15)">
-            <metadata id="metadata841">
-              <rdf:rdf>
-                <cc:work rdf:about="">
-                  <dc:format>image/svg+xml</dc:format>
-                  <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
-                </cc:work>
-              </rdf:rdf>
-            </metadata>
-            <defs id="defs839"></defs>
-            <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10"
-              gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2"
-              inkscape:window-width="1440" inkscape:window-height="798" id="namedview837" showgrid="false"
-              inkscape:zoom="0.60449219" inkscape:cx="512" inkscape:cy="512" inkscape:window-x="0"
-              inkscape:window-y="25" inkscape:window-maximized="0" inkscape:current-layer="svg835"></sodipodi:namedview>
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z"
-              transform="scale(64)" fill="#1B1F23" id="path833" style="fill:#ffffff;fill-opacity:1"></path>
-          </svg>
-        </span>
+            <div class="flex flex-col items-center cursor-pointer">
+              <span class="bg-blue-900 rounded-full p-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentcolor"
+                    d="M2.06 10.06c.51.51 1.32.56 1.87.1c4.67-3.84 11.45-3.84 16.13-.01c.56.46 1.38.42 1.89-.09c.59-.59.55-1.57-.1-2.1c-5.71-4.67-13.97-4.67-19.69 0c-.65.52-.7 1.5-.1 2.1zm7.76 7.76l1.47 1.47c.39.39 1.02.39 1.41 0l1.47-1.47c.47-.47.37-1.28-.23-1.59a4.28 4.28 0 0 0-3.91 0c-.57.31-.68 1.12-.21 1.59zm-3.73-3.73c.49.49 1.26.54 1.83.13a7.064 7.064 0 0 1 8.16 0c.57.4 1.34.36 1.83-.13l.01-.01c.6-.6.56-1.62-.13-2.11c-3.44-2.49-8.13-2.49-11.58 0c-.69.5-.73 1.51-.12 2.12z"
+                  />
+                </svg>
+              </span>
+              <p class="text-sm text-center">
+                Broadband<br />
+                Recharge
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center justify-center">
+            <button
+              class="text-blue-500 text-sm border-[1.5px] border-dark-text-color rounded-full py-1.5 px-5"
+            >
+              See All
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- promotion section -->
+      <section class="bg-dark-primary text-dark-text-color">
+        <h3 class="text-lg px-5">Promotions</h3>
+        <!-- grid container -->
+        <div class="grid grid-cols-4 py-3">
+          <div class="flex flex-col items-center cursor-pointer">
+            <img
+              class="w-12 h-12"
+              src="./public/img/trophy.png"
+              alt="rewards"
+            />
+            <p class="text-sm">Rewards</p>
+          </div>
+          <div class="flex flex-col items-center cursor-pointer">
+            <img
+              class="w-12 h-12 rounded-full bg-red-300"
+              src="./public/img/discount.png"
+              alt="offers"
+            />
+            <p class="text-sm">Offers</p>
+          </div>
+          <div class="flex flex-col items-center cursor-pointer">
+            <img
+              class="w-12 h-12 rounded-full bg-blue-400"
+              src="./public/img/coupon.png"
+              alt="coupons"
+            />
+            <p class="text-sm">Coupons</p>
+          </div>
+        </div>
+      </section>
 
-      </div>
-    </section>
+      <!-- checking statements section -->
+      <section
+        class="bg-dark-primary text-dark-text-color px-5 py-7 flex flex-col gap-y-4"
+      >
+        <!-- cibil -->
+        <div class="flex justify-between items-center cursor-pointer">
+          <div class="text-blue-400">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentcolor"
+                d="M19.46 10a1 1 0 0 0-.07 1a7.55 7.55 0 0 1 .52 1.81a8 8 0 0 1-.69 4.73a1 1 0 0 1-.89.53H5.68a1 1 0 0 1-.89-.54A8 8 0 0 1 13 6.06a7.69 7.69 0 0 1 2.11.56a1 1 0 0 0 1-.07a1 1 0 0 0-.17-1.76A10 10 0 0 0 3.35 19a2 2 0 0 0 1.72 1h13.85a2 2 0 0 0 1.74-1a10 10 0 0 0 .55-8.89a1 1 0 0 0-1.75-.11z"
+              />
+              <path
+                fill="currentcolor"
+                d="M10.59 12.59a2 2 0 0 0 2.83 2.83l5.66-8.49z"
+              />
+            </svg>
+          </div>
+          <div class="flex-1 ml-2">
+            <p class="text-sm">check Your Cibil Score at no cost</p>
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#888888"
+                d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z"
+              />
+            </svg>
+          </div>
+        </div>
+        <!-- history of transaction -->
+        <div class="flex justify-between items-center cursor-pointer">
+          <div class="text-blue-400">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentcolor"
+                d="M13.26 3C8.17 2.86 4 6.95 4 12H2.21c-.45 0-.67.54-.35.85l2.79 2.8c.2.2.51.2.71 0l2.79-2.8a.5.5 0 0 0-.36-.85H6c0-3.9 3.18-7.05 7.1-7c3.72.05 6.85 3.18 6.9 6.9c.05 3.91-3.1 7.1-7 7.1c-1.61 0-3.1-.55-4.28-1.48a.994.994 0 0 0-1.32.08c-.42.42-.39 1.13.08 1.49A8.858 8.858 0 0 0 13 21c5.05 0 9.14-4.17 9-9.26c-.13-4.69-4.05-8.61-8.74-8.74zm-.51 5c-.41 0-.75.34-.75.75v3.68c0 .35.19.68.49.86l3.12 1.85c.36.21.82.09 1.03-.26c.21-.36.09-.82-.26-1.03l-2.88-1.71v-3.4c0-.4-.34-.74-.75-.74z"
+              />
+            </svg>
+          </div>
+          <div class="flex-1 ml-2">
+            <p class="text-sm">Show transaction history</p>
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#888888"
+                d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z"
+              />
+            </svg>
+          </div>
+        </div>
+        <!-- balance check -->
+        <div class="flex justify-between items-center cursor-pointer">
+          <div class="text-blue-400">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentcolor"
+                d="M6.5 10h-2v7h2v-7m6 0h-2v7h2v-7m8.5 9H2v2h19v-2m-2.5-9h-2v7h2v-7m-7-6.74L16.71 6H6.29l5.21-2.74m0-2.26L2 6v2h19V6l-9.5-5Z"
+              ></path>
+            </svg>
+          </div>
+          <div class="flex-1 ml-2">
+            <p class="text-sm">Check bank balance</p>
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#888888"
+                d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
 
+      <!-- footer section -->
+      <section class="bg-dark-primary text-dark-text-color relative">
+        <img
+          class="h-[250px] w-full"
+          src="./public/img/gpay-footer.jpg"
+          alt="footerbanner"
+        />
+        <div class="text-white absolute top-0 left-2 px-5 py-6">
+          <div class="mt-3 top-0">
+            <h6>Invite friends to get ₹201</h6>
+            <p class="text-xs mt-2">
+              invite friends to Google pay and get ₹201 when your freind sends
+              their first payment.They get ₹21
+            </p>
 
-
-
-
-
-
-
-
-  </main>
-</body>
-
+            <p class="flex text-xs mt-6">
+              Copy Your Code <span class="font-semibold">&nbsp;wc88y6g</span>
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentcolor"
+                    d="M15 20H5V7c0-.55-.45-1-1-1s-1 .45-1 1v13c0 1.1.9 2 2 2h10c.55 0 1-.45 1-1s-.45-1-1-1zm5-4V4c0-1.1-.9-2-2-2H9c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h9c1.1 0 2-.9 2-2zm-2 0H9V4h9v12z"
+                  ></path></svg
+              ></span>
+            </p>
+            <button
+              class="text-blue-500 text-sm border-[1.5px] border-dark-text-color rounded-full py-1.5 px-5 mt-6"
+            >
+              Invite
+            </button>
+          </div>
+        </div>
+        <!-- copy rights section -->
+        <div class="py-4 px-5 flex items-center justify-center gap-1">
+          <p class="text-xs">
+            Developed by
+            <a
+              class="text-blue-400"
+              href="https://github.com/vedhatech002/gpay-ui"
+              >@vijayavedhasekaran</a
+            >
+          </p>
+          <span>
+            <svg
+              xmlns:dc="http://purl.org/dc/elements/1.1/"
+              xmlns:cc="http://creativecommons.org/ns#"
+              xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+              xmlns:svg="http://www.w3.org/2000/svg"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+              xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+              width="16"
+              height="16"
+              viewBox="0 0 1024 1024"
+              fill="none"
+              version="1.1"
+              id="svg835"
+              sodipodi:docname="Octicons-mark-github.svg"
+              inkscape:version="1.0.2 (e86c8708, 2021-01-15)"
+            >
+              <metadata id="metadata841">
+                <rdf:rdf>
+                  <cc:work rdf:about="">
+                    <dc:format>image/svg+xml</dc:format>
+                    <dc:type
+                      rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+                    ></dc:type>
+                  </cc:work>
+                </rdf:rdf>
+              </metadata>
+              <defs id="defs839"></defs>
+              <sodipodi:namedview
+                pagecolor="#ffffff"
+                bordercolor="#666666"
+                borderopacity="1"
+                objecttolerance="10"
+                gridtolerance="10"
+                guidetolerance="10"
+                inkscape:pageopacity="0"
+                inkscape:pageshadow="2"
+                inkscape:window-width="1440"
+                inkscape:window-height="798"
+                id="namedview837"
+                showgrid="false"
+                inkscape:zoom="0.60449219"
+                inkscape:cx="512"
+                inkscape:cy="512"
+                inkscape:window-x="0"
+                inkscape:window-y="25"
+                inkscape:window-maximized="0"
+                inkscape:current-layer="svg835"
+              ></sodipodi:namedview>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z"
+                transform="scale(64)"
+                fill="#1B1F23"
+                id="path833"
+                style="fill: #ffffff; fill-opacity: 1"
+              ></path>
+            </svg>
+          </span>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
